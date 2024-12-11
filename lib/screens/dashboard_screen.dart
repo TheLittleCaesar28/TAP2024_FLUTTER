@@ -52,6 +52,24 @@ class DashboardScreen extends StatelessWidget {
             leading: const Icon(Icons.exit_to_app),
             trailing: const Icon(Icons.chevron_right),
           ),
+          ListTile(
+            onTap: () {
+              Navigator.pushNamed(context, "/new");
+            },
+            title: const Text('Nueva Pantalla'),
+            subtitle: const Text('Explora una nueva funcionalidad'),
+            leading: const Icon(Icons.new_releases),
+            trailing: const Icon(Icons.chevron_right),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.pushNamed(context, "/new");
+            },
+            title: const Text('SpaceX Launches'),
+            subtitle: const Text('Explora los lanzamientos de SpaceX'),
+            leading: const Icon(Icons.rocket_launch),
+            trailing: const Icon(Icons.chevron_right),
+          ),
           DayNightSwitcher(
             isDarkModeEnabled: false,
             onStateChanged: (isDarkModeEnabled) {},
